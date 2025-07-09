@@ -9,13 +9,11 @@
 
 ### 2. GCP Architecture
 
-```plaintext
 [Cloud Scheduler] (cron)
         ↓ Pub/Sub topic
    [Cloud Function]
         ↓ (HTTP response with merged JSON)
    [Cloud Storage / BigQuery]
-plaintext```
 
 - Trigger: Cloud Scheduler → Pub/Sub → Cloud Function (HTTP subscription).
 
