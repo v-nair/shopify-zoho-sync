@@ -27,16 +27,28 @@
 
 ### 3. Local Setup & Running
 **1. Create and activate a venv**
+```text
 python3 -m venv venv && source venv/bin/activate
+```
 
 **2. Install dependencies**
+```text
 pip install -r requirements.txt
+```
 
 **3. Populate .env in project root**
+```text
+SHOPIFY_API_URL=...
+ZOHO_API_URL=...
+SHOPIFY_ACCESS_TOKEN=...
+ZOHO_ACCESS_TOKEN=...
+ZOHO_ORG_ID=...
+```
 
 **4. Run locally**
+```text
 functions-framework --target=main
-
+```
 
 ### 4. Sample Output (output.json)
 ```text
