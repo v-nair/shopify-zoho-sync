@@ -9,15 +9,15 @@
 
 ### 2. GCP Architecture
 
-[Cloud Scheduler] (cron)
-        ↓ Pub/Sub topic
-   [Cloud Function]
-        ↓ (HTTP response with merged JSON)
-   [Cloud Storage / BigQuery]
-
 - Trigger: Cloud Scheduler → Pub/Sub → Cloud Function (HTTP subscription).
 
 - Storage: Store the function's output JSON in a Cloud Storage bucket or load into BigQuery manually.
 
 - Secrets: Manage API endpoints and tokens in Secret Manager, injected as environment variables.
 
+```plaintext
+[Cloud Scheduler] (cron)
+        ↓ Pub/Sub topic
+   [Cloud Function]
+        ↓ (HTTP response with merged JSON)
+   [Cloud Storage / BigQuery]
