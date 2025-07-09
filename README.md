@@ -26,15 +26,15 @@
 ```
 
 ### 3. Local Setup & Running
-# 1. Create and activate a venv
+**1. Create and activate a venv**
 python3 -m venv venv && source venv/bin/activate
 
-# 2. Install dependencies
+**2. Install dependencies**
 pip install -r requirements.txt
 
-# 3. Populate .env in project root
+**3. Populate .env in project root**
 
-# 4. Run locally
+**4. Run locally**
 functions-framework --target=main
 
 
